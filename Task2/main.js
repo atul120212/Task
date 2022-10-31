@@ -1,10 +1,9 @@
-let submit=document.querySelector(".submit");
+let submit=document.querySelector("#submit");
 
 submit.addEventListener('click',()=>{
 
-    var output=document.querySelector(".output");
-    console.log(output);
-   
+    
+   console.log("hello")
     //console.log(generatedurl);
    
 
@@ -12,11 +11,10 @@ submit.addEventListener('click',()=>{
    //storing the data in objects getting from form
     const data={
         name: document.getElementById("name").value,
-        
         email: document.getElementById("email").value,
         websitelink: document.getElementById("websitelink").value,
         image: document.getElementById("image").value,
-        gender: document.getElementById("gender").value,
+        gender: document.getElementsByName("gender"),
         skills: document.getElementById("skills").value
     };
     console.log(data);
@@ -27,8 +25,8 @@ submit.addEventListener('click',()=>{
     newlist.innerHTML=`
       
       <div class="NameContainer">${data.name}</div>
-      <a href="mailto:anushaviswanathan55610@ieee.org">${data.email}</a><br>
-      <a href="www.anushaviswanathan.com">${data.websitelink}</a>
+      <a href="mailto:atulsharma28092004@gmail.com">${data.email}</a><br>
+      <a href="www.google.com">${data.websitelink}</a>
       <div class="SkillContainer">${data.skills}</div>
     `
     console.log(newlist);

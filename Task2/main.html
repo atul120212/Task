@@ -12,7 +12,7 @@
 <tr>    
     <div class="box">
         <div class = "form">
-            <h2>Data</h2><form action="example.php">
+            <h2>Data</h2><form action="#">
             <div class="inputBox">
                 <input type="text" id="name" required="required">
                 <span>Name</span>
@@ -35,19 +35,19 @@
             </div><br>
             <div class="radioo">
                 <span class="g">Gender</span><i></i>
-                <input type="radio" id="gender" name="Gender"><span class="gen">Male</span>
-                <input type="radio" id="gender" name="Gender"><span class="gen">Female</span>
+                <input type="radio" value="male"  name="gender"><span class="gen">Male</span>
+                <input type="radio" value="female" name="gender"><span class="gen">Female</span>
             </div><br>
             <div class="checkbox">
                 <span class="ge">Skills</span>
-                <input type="checkbox" id="skills" ><span class="gen">Java</span>
-                <input type="checkbox" id="skills"><span class="gen">Python</span>
-                <input type="checkbox" id="skills"><span class="gen">JavaScript</span>
+                <input type="checkbox" value="Java" id="skills" ><span class="gen">Java</span>
+                <input type="checkbox" value="Python" id="skills" ><span class="gen">Python</span>
+                <input type="checkbox" value="JavaScript" id="skills" ><span class="gen">JavaScript</span>
                 
             </div>
             <div>
                 
-                <input type="submit" class="sub"></input>
+                <input type="submit" id="submit" class="sub"></input>
                 
             </div>
             <div>
@@ -67,8 +67,6 @@
     <span id="span">*Fill the form to Enroll the Students.</span>
 </div>
 </table>
-
-
-
+<script src="main.js"></script>
 </body>
 </html>
